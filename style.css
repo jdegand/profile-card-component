@@ -1,0 +1,119 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.container {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.numbers {
+  font-weight: 700;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.age {
+  font-weight: 400;
+}
+
+.gray-text {
+  color: gray;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 25%;
+  z-index: 5;
+}
+
+.top-section {
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin-top: -40px;
+  z-index: 2;
+}
+
+.name-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+
+.top-circle {
+  position: absolute;
+  left: -175px;
+  top: -300px;
+  width: 800px;
+}
+
+.bottom-circle {
+  position: absolute;
+  bottom: -450px;
+  right: -150px;
+  width: 800px;
+}
+
+
+@media (max-width: 600px) {
+
+
+  .top-circle {
+    position: absolute;
+    left: -200px;
+    top: -100px;
+    width: 400px;
+}
+
+  .bottom-circle {
+    position: absolute;
+    bottom: -200px;
+    right: -175px;
+    width: 400px;
+}
+
+}
