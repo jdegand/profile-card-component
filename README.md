@@ -43,3 +43,4 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - Could have a before and an after for background images
 - remove redundant overflow from css
+- If screen gets too small, the text overlaps.
